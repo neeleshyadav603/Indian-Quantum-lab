@@ -1,0 +1,14 @@
+# Indian Quantum Lab - Robots.txt
+# https://indianquantumlab.in/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /partials/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://indianquantumlab.in/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

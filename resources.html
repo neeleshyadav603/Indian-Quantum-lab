@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curated quantum computing resources: books, courses, papers, YouTube channels, and tools.">
+    <title>Resources — Indian Quantum Lab</title>
+    
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+        <a href="/" class="navbar-brand" aria-label="Indian Quantum Lab Home">
+            <img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon">
+            <span class="navbar-brand-text">Indian Quantum Lab</span>
+        </a>
+
+        <ul class="navbar-links" id="navbar-links" aria-label="Primary navigation">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/courses.html" class="navbar-link">Courses</a></li>
+            <li><a href="/learn.html" class="navbar-link">Learn</a></li>
+            <li><a href="/blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="/research.html" class="navbar-link">Research</a></li>
+            <li><a href="/virtual-lab.html" class="navbar-link">Virtual Lab</a></li>
+            <li><a href="/community.html" class="navbar-link">Community</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+            <button class="navbar-action-btn theme-toggle" aria-label="Toggle dark mode" type="button">
+                <span class="theme-toggle-icon">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </span>
+            </button>
+            <button class="navbar-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-links" type="button"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+        <main class="page-main">
+            
+            <section class="page-hero">
+                <div class="container">
+                    <span class="section-eyebrow">Curated Library</span>
+                    <h1>Quantum <span class="gradient-text">Resources</span></h1>
+                    <p>Hand-picked books, courses, papers, videos, and tools to deepen your quantum knowledge. <span id="resourceCount">Showing 25 resources</span></p>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <div class="container">
+                    
+                    <div class="resources-filters">
+                        <button class="resource-filter-btn active" data-filter="all">All (25)</button>
+                        <button class="resource-filter-btn" data-filter="book"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15Z"/></svg> Books (5)</button>
+                        <button class="resource-filter-btn" data-filter="course"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></svg> Courses (5)</button>
+                        <button class="resource-filter-btn" data-filter="paper">📄 Papers (5)</button>
+                        <button class="resource-filter-btn" data-filter="youtube">📺 YouTube (5)</button>
+                        <button class="resource-filter-btn" data-filter="tool"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18v3h3l6.7-6.7a4 4 0 0 0 5-5l-2.9 2.9-2-2 2.9-2.9Z"/></svg> Tools (5)</button>
+                    </div>
+
+                    <div class="resources-grid">
+                        
+                        <!-- BOOKS -->
+                        <a href="https://www.cambridge.org/core/books/quantum-computation-and-quantum-information/04770F3DB6458D9EB5B1F7F1F9E1E1F2" class="resource-card" data-type="book" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-book">Book</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Computation and Quantum Information</h3>
+                            <p class="resource-description">Nielsen & Chuang — the definitive textbook on quantum computing. Covers everything from qubits to error correction with mathematical rigor.</p>
+                            <span class="resource-link">View Book →</span>
+                        </a>
+
+                        <a href="https://www.quantumcountry.io" class="resource-card" data-type="book" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-book">Book</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Country</h3>
+                            <p class="resource-description">Andy Matuschak & Michael Nielsen's interactive mnemonic-based introduction to quantum computing. Innovative spaced-repetition learning.</p>
+                            <span class="resource-link">Visit Site →</span>
+                        </a>
+
+                        <a href="https://www.manning.com/books/quantum-computing-in-action" class="resource-card" data-type="book" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-book">Book</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Computing in Action</h3>
+                            <p class="resource-description">Steve Hush's practical guide with hands-on Qiskit examples. Great for developers transitioning from classical to quantum programming.</p>
+                            <span class="resource-link">View Book →</span>
+                        </a>
+
+                        <a href="https://www.davidmcMahon.net/books/qc.html" class="resource-card" data-type="book" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-book">Book</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Computing Explained</h3>
+                            <p class="resource-description">David McMahon's accessible introduction with minimal prerequisites. Focuses on building intuition before diving into formal mathematics.</p>
+                            <span class="resource-link">View Book →</span>
+                        </a>
+
+                        <a href="https://www.qiskit.org/learn/textbook" class="resource-card" data-type="book" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-book">Book</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">Learn Quantum Computation using Qiskit</h3>
+                            <p class="resource-description">IBM's free interactive textbook with runnable code cells. Covers everything from linear algebra to Shor's algorithm with Qiskit integration.</p>
+                            <span class="resource-link">Read Online →</span>
+                        </a>
+
+                        <!-- COURSES -->
+                        <a href="https://www.coursera.org/learn/quantum-computing" class="resource-card" data-type="course" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-course">Course</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Computing (Coursera)</h3>
+                            <p class="resource-description">Saint Petersburg State University course on Coursera. Comprehensive intro to quantum gates, algorithms, and applications.</p>
+                            <span class="resource-link">Enroll →</span>
+                        </a>
+
+                        <a href="https://qiskit.org/learn" class="resource-card" data-type="course" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-course">Course</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">Qiskit Global Summer School</h3>
+                            <p class="resource-description">IBM's annual intensive summer school with lectures, labs, and challenges. Past editions covered quantum simulation, ML, and error correction.</p>
+                            <span class="resource-link">View Archive →</span>
+                        </a>
+
+                        <a href="https://brilliant.org/courses/quantum-computing/" class="resource-card" data-type="course" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-course">Course</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Brilliant Quantum Computing</h3>
+                            <p class="resource-description">Interactive problem-based course on Brilliant.org. Excellent for building intuition through visual puzzles and hands-on challenges.</p>
+                            <span class="resource-link">Start Course →</span>
+                        </a>
+
+                        <a href="https://www.edx.org/course/quantum-information-science-i" class="resource-card" data-type="course" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-course">Course</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Information Science (MIT)</h3>
+                            <p class="resource-description">MIT OpenCourseWare graduate-level course by Isaac Chuang. Deep dive into quantum information theory, channels, and cryptography.</p>
+                            <span class="resource-link">View Course →</span>
+                        </a>
+
+                        <a href="https://quantum.country/summer-school" class="resource-card" data-type="course" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-course">Course</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">QIndia Summer School</h3>
+                            <p class="resource-description">India's own quantum computing summer school for undergrads. Hands-on labs, mentorship, and research projects at IISc/IITs.</p>
+                            <span class="resource-link">Apply →</span>
+                        </a>
+
+                        <!-- PAPERS -->
+                        <a href="https://arxiv.org/abs/quant-ph/9508027" class="resource-card" data-type="paper" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-paper">Paper</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">Shor's Original Factoring Paper</h3>
+                            <p class="resource-description">The foundational 1995 paper introducing Shor's algorithm. Essential reading for understanding how quantum computing threatens RSA encryption.</p>
+                            <span class="resource-link">Read Paper →</span>
+                        </a>
+
+                        <a href="https://arxiv.org/abs/1801.00862" class="resource-card" data-type="paper" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-paper">Paper</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">NISQ Era and Beyond</h3>
+                            <p class="resource-description">John Preskill's influential 2018 paper defining the current era of quantum computing and exploring near-term opportunities.</p>
+                            <span class="resource-link">Read Paper →</span>
+                        </a>
+
+                        <a href="https://arxiv.org/abs/1312.4546" class="resource-card" data-type="paper" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-paper">Paper</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">Surface Codes Review</h3>
+                            <p class="resource-description">Comprehensive review of surface codes — the leading approach to fault-tolerant quantum computing. Covers thresholds, decoding, and implementations.</p>
+                            <span class="resource-link">Read Paper →</span>
+                        </a>
+
+                        <a href="https://arxiv.org/abs/1812.09913" class="resource-card" data-type="paper" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-paper">Paper</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">VQE: A Practical Guide</h3>
+                            <p class="resource-description">Tutorial paper on Variational Quantum Eigensolver with chemistry applications. Great for learning hybrid quantum-classical algorithms.</p>
+                            <span class="resource-link">Read Paper →</span>
+                        </a>
+
+                        <a href="https://www.nature.com/articles/s41586-019-1666-5" class="resource-card" data-type="paper" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-paper">Paper</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">Google Quantum Supremacy</h3>
+                            <p class="resource-description">Google's landmark 2019 Nature paper demonstrating quantum supremacy with the 53-qubit Sycamore processor.</p>
+                            <span class="resource-link">Read Paper →</span>
+                        </a>
+
+                        <!-- YOUTUBE -->
+                        <a href="https://www.youtube.com/@QuantumComputingIndia" class="resource-card" data-type="youtube" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-youtube">YouTube</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Quantum Computing India</h3>
+                            <p class="resource-description">Hindi and English tutorials on quantum computing basics, Qiskit, and research updates from the Indian quantum community.</p>
+                            <span class="resource-link">Watch Channel →</span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@qiskit" class="resource-card" data-type="youtube" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-youtube">YouTube</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">Qiskit Channel</h3>
+                            <p class="resource-description">IBM's official Qiskit channel with tutorials, summer school lectures, and live coding sessions on quantum algorithms.</p>
+                            <span class="resource-link">Watch Channel →</span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@3blue1brown" class="resource-card" data-type="youtube" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-youtube">YouTube</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">3Blue1Brown</h3>
+                            <p class="resource-description">Beautifully animated visualizations of quantum mechanics and linear algebra concepts. Builds deep geometric intuition.</p>
+                            <span class="resource-link">Watch Channel →</span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@sabinehossenfelder" class="resource-card" data-type="youtube" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-youtube">YouTube</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Sabine Hossenfelder</h3>
+                            <p class="resource-description">Theoretical physicist explaining quantum computing news with clarity and scientific honesty. Cuts through hype effectively.</p>
+                            <span class="resource-link">Watch Channel →</span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@umeshvazirani" class="resource-card" data-type="youtube" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-youtube">YouTube</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">Umesh Vazirani Lectures</h3>
+                            <p class="resource-description">Lectures by UC Berkeley's pioneer of quantum complexity theory. Essential viewing for understanding the theoretical foundations.</p>
+                            <span class="resource-link">Watch Channel →</span>
+                        </a>
+
+                        <!-- TOOLS -->
+                        <a href="https://qiskit.org" class="resource-card" data-type="tool" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-tool">Tool</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">Qiskit</h3>
+                            <p class="resource-description">IBM's open-source SDK for quantum computing. The most widely-used framework for building and running quantum circuits.</p>
+                            <span class="resource-link">Visit Qiskit →</span>
+                        </a>
+
+                        <a href="https://quantumai.google/cirq" class="resource-card" data-type="tool" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-tool">Tool</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">Cirq</h3>
+                            <p class="resource-description">Google's Python framework for designing quantum circuits on near-term processors. Excellent for NISQ algorithm research.</p>
+                            <span class="resource-link">Visit Cirq →</span>
+                        </a>
+
+                        <a href="https://pennylane.ai" class="resource-card" data-type="tool" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-tool">Tool</span>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="resource-name">PennyLane</h3>
+                            <p class="resource-description">Xanadu's framework for differentiable quantum programming. Perfect for quantum machine learning and variational algorithms.</p>
+                            <span class="resource-link">Visit PennyLane →</span>
+                        </a>
+
+                        <a href="https://algassert.com/quirk" class="resource-card" data-type="tool" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-tool">Tool</span>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="resource-name">Quirk</h3>
+                            <p class="resource-description">Craig Gidney's brilliant drag-and-drop circuit simulator. Real-time state vector visualization with no setup required.</p>
+                            <span class="resource-link">Open Quirk →</span>
+                        </a>
+
+                        <a href="https://qutip.org" class="resource-card" data-type="tool" target="_blank" rel="noopener">
+                            <div class="resource-top">
+                                <span class="resource-type-badge resource-type-tool">Tool</span>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="resource-name">QuTiP</h3>
+                            <p class="resource-description">Python toolbox for simulating open quantum systems. Essential for research on decoherence, quantum optics, and master equations.</p>
+                            <span class="resource-link">Visit QuTiP →</span>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo"><img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon"><span>Indian Quantum Lab</span></a>
+                    <p class="footer-tagline">Democratizing quantum computing education for India's next generation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="/blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/resources.html" class="footer-link">Resources</a></li>
+                        <li><a href="/downloads.html" class="footer-link">Downloads</a></li>
+                        <li><a href="/virtual-lab.html" class="footer-link">Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Stay Updated</h3>
+                    <a href="https://indianquantumlab.substack.com" class="footer-newsletter-btn" target="_blank">Join Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Indian Quantum Lab. All rights reserved.</p>
+                <p class="footer-credit">Built with <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg> for Indian Quantum Community</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/pages.js"></script>
+</body>
+</html>

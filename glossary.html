@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/seo.js"></script>
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/glossary.css">
+    
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+        <a href="/" class="navbar-brand" aria-label="Indian Quantum Lab Home">
+            <img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon">
+            <span class="navbar-brand-text">Indian Quantum Lab</span>
+        </a>
+
+        <ul class="navbar-links" id="navbar-links" aria-label="Primary navigation">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/courses.html" class="navbar-link">Courses</a></li>
+            <li><a href="/learn.html" class="navbar-link">Learn</a></li>
+            <li><a href="/blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="/research.html" class="navbar-link">Research</a></li>
+            <li><a href="/virtual-lab.html" class="navbar-link">Virtual Lab</a></li>
+            <li><a href="/community.html" class="navbar-link">Community</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+            <button class="navbar-action-btn theme-toggle" aria-label="Toggle dark mode" type="button">
+                <span class="theme-toggle-icon">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </span>
+            </button>
+            <button class="navbar-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-links" type="button"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+        <main class="page-main">
+            
+            <!-- Hero -->
+            <section class="glossary-hero">
+                <div class="container">
+                    <span class="section-eyebrow">Reference</span>
+                    <h1>Quantum <span class="gradient-text">Glossary</span></h1>
+                    <p>Your comprehensive reference for quantum computing terminology. <span id="termCount">44 terms</span> defined and linked together.</p>
+                </div>
+            </section>
+
+            <!-- Search Bar -->
+            <section class="glossary-search-section">
+                <div class="container">
+                    <div class="glossary-search-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <input 
+                            type="search" 
+                            id="glossarySearch" 
+                            class="glossary-search-input" 
+                            placeholder="Search terms (e.g., entanglement, Hadamard, QFT)..."
+                            autocomplete="off"
+                        >
+                        <button class="search-clear" id="glossaryClear" aria-label="Clear search" style="display: none;">&times;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alphabet Navigation -->
+            <nav class="alphabet-nav" id="alphabetNav">
+                <div class="container">
+                    <div class="alphabet-inner" id="alphabetLetters">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Glossary Content -->
+            <section class="glossary-content">
+                <div class="container">
+                    <div class="glossary-results-info">
+                        <span id="resultsCount">Showing all 44 terms</span>
+                    </div>
+                    
+                    <div id="glossaryList">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div class="glossary-no-results" id="noResults" style="display: none;">
+                        <div class="no-results-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+                        <h3>No terms found</h3>
+                        <p>Try different keywords or clear the search</p>
+                        <button class="btn btn-secondary" id="clearSearch">Clear Search</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="glossary-cta">
+                <div class="container-narrow">
+                    <div class="cta-card">
+                        <h2>Want to dive deeper?</h2>
+                        <p>Apply these concepts in our interactive Virtual Quantum Lab, or follow our structured learning pathways.</p>
+                        <div class="cta-buttons">
+                            <a href="/learn.html" class="btn btn-primary">Learning Pathways</a>
+                            <a href="/virtual-lab.html" class="btn btn-secondary">Virtual Lab</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo"><img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon"><span>Indian Quantum Lab</span></a>
+                    <p class="footer-tagline">Democratizing quantum computing education for India's next generation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="/blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/learn.html" class="footer-link">Learning Pathways</a></li>
+                        <li><a href="/glossary.html" class="footer-link">Glossary</a></li>
+                        <li><a href="/virtual-lab.html" class="footer-link">Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Stay Updated</h3>
+                    <a href="https://indianquantumlab.substack.com" class="footer-newsletter-btn" target="_blank">Join Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Indian Quantum Lab. All rights reserved.</p>
+                <p class="footer-credit">Built with <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg> for Indian Quantum Community</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/glossary-data.js"></script>
+    <script src="/js/glossary.js"></script>
+</body>
+</html>

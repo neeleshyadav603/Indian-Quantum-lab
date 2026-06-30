@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Home",
+    "url": "/",
+    "type": "page",
+    "tags": ["home", "landing", "start"],
+    "excerpt": "India's open educational platform for quantum computing — free for everyone, forever."
+  },
+  {
+    "title": "Courses",
+    "url": "/courses.html",
+    "type": "page",
+    "tags": ["courses", "learning", "video", "lectures"],
+    "excerpt": "Structured video courses from beginner to advanced quantum computing."
+  },
+  {
+    "title": "Learning Pathways",
+    "url": "/learn.html",
+    "type": "page",
+    "tags": ["learn", "pathways", "beginner", "intermediate", "advanced", "lessons"],
+    "excerpt": "Follow structured lessons from fundamentals to cutting-edge research with progress tracking."
+  },
+  {
+    "title": "Blog",
+    "url": "/blog.html",
+    "type": "page",
+    "tags": ["blog", "articles", "tutorials", "insights"],
+    "excerpt": "Deep dives into quantum computing concepts, algorithms, and research breakthroughs."
+  },
+  {
+    "title": "Research",
+    "url": "/research.html",
+    "type": "page",
+    "tags": ["research", "papers", "publications", "open-problems"],
+    "excerpt": "Curated publications, open problems, and current research explorations in quantum computing."
+  },
+  {
+    "title": "Virtual Quantum Lab",
+    "url": "/virtual-lab.html",
+    "type": "page",
+    "tags": ["lab", "simulator", "circuit", "interactive", "drag-drop"],
+    "excerpt": "Build and simulate quantum circuits in your browser with drag-and-drop gates and real-time state vector visualization."
+  },
+  {
+    "title": "Quiz",
+    "url": "/quiz.html",
+    "type": "page",
+    "tags": ["quiz", "test", "knowledge", "assessment"],
+    "excerpt": "Test your quantum knowledge with interactive quizzes across different topics."
+  },
+  {
+    "title": "Glossary",
+    "url": "/glossary.html",
+    "type": "page",
+    "tags": ["glossary", "dictionary", "terms", "definitions", "reference"],
+    "excerpt": "Comprehensive quantum computing glossary with 44+ terms defined and linked together."
+  },
+  {
+    "title": "Community",
+    "url": "/community.html",
+    "type": "page",
+    "tags": ["community", "discord", "telegram", "github", "forum"],
+    "excerpt": "Join India's growing quantum computing community. Connect, collaborate, and learn together."
+  },
+  {
+    "title": "Downloads",
+    "url": "/downloads.html",
+    "type": "page",
+    "tags": ["downloads", "software", "pdf", "datasets", "tools"],
+    "excerpt": "Download quantum computing software, course notes, datasets, and educational resources."
+  },
+  {
+    "title": "Resources",
+    "url": "/resources.html",
+    "type": "page",
+    "tags": ["resources", "books", "courses", "youtube", "tools", "external"],
+    "excerpt": "Hand-picked books, courses, papers, videos, and tools to deepen your quantum knowledge."
+  },
+  {
+    "title": "About",
+    "url": "/about.html",
+    "type": "page",
+    "tags": ["about", "mission", "story", "founder", "team"],
+    "excerpt": "Our mission to make quantum computing education accessible to every Indian student."
+  },
+  {
+    "title": "Contact",
+    "url": "/contact.html",
+    "type": "page",
+    "tags": ["contact", "email", "social", "support"],
+    "excerpt": "Get in touch with questions, collaborations, speaking requests, or just to say hi."
+  },
+  {
+    "title": "FAQ",
+    "url": "/faq.html",
+    "type": "page",
+    "tags": ["faq", "questions", "help", "support"],
+    "excerpt": "Frequently asked questions about Indian Quantum Lab, courses, and technical requirements."
+  },
+  {
+    "title": "Roadmap",
+    "url": "/roadmap.html",
+    "type": "page",
+    "tags": ["roadmap", "planned", "features", "progress"],
+    "excerpt": "Public product roadmap showing what we're planning, building, and have shipped."
+  },
+  {
+    "title": "Changelog",
+    "url": "/changelog.html",
+    "type": "page",
+    "tags": ["changelog", "updates", "versions", "history"],
+    "excerpt": "Version history and changelog. See what's new, improved, and fixed."
+  },
+  {
+    "title": "Introduction to Qubits: Beyond Classical Bits",
+    "url": "/blog-post.html?id=introduction-to-qubits",
+    "type": "article",
+    "tags": ["qubits", "superposition", "basics", "quantum-mechanics"],
+    "excerpt": "Unlike classical bits that exist as 0 or 1, qubits can exist in superposition — enabling quantum parallelism."
+  },
+  {
+    "title": "Understanding the Hadamard Gate",
+    "url": "/blog-post.html?id=understanding-hadamard-gate",
+    "type": "article",
+    "tags": ["hadamard", "gates", "superposition", "circuits"],
+    "excerpt": "The Hadamard gate creates perfect superposition and enables quantum algorithms to explore multiple paths."
+  },
+  {
+    "title": "Quantum Entanglement Explained Simply",
+    "url": "/blog-post.html?id=quantum-entanglement-explained",
+    "type": "article",
+    "tags": ["entanglement", "bell-states", "non-locality", "spooky-action"],
+    "excerpt": "Entanglement links qubits so measuring one instantly determines the other, enabling teleportation."
+  },
+  {
+    "title": "Grover's Search Algorithm: A Visual Guide",
+    "url": "/blog-post.html?id=grovers-algorithm-visual-guide",
+    "type": "article",
+    "tags": ["grover", "search", "algorithm", "amplitude-amplification"],
+    "excerpt": "Grover's algorithm finds marked items in √N queries — quadratic speedup over classical search."
+  },
+  {
+    "title": "Shor's Algorithm and RSA Encryption",
+    "url": "/blog-post.html?id=shors-algorithm-rsa",
+    "type": "article",
+    "tags": ["shor", "factoring", "rsa", "cryptography", "post-quantum"],
+    "excerpt": "Shor's algorithm factors integers exponentially faster, threatening RSA encryption."
+  },
+  {
+    "title": "Quantum Hardware: Superconducting vs Trapped Ion",
+    "url": "/blog-post.html?id=quantum-hardware-superconducting-trapped-ion",
+    "type": "article",
+    "tags": ["hardware", "superconducting", "trapped-ion", "qubits", "comparison"],
+    "excerpt": "Compare coherence times, gate fidelities, and scalability of leading quantum hardware approaches."
+  },
+  {
+    "title": "Quantum Error Correction Basics",
+    "url": "/blog-post.html?id=quantum-error-correction-basics",
+    "type": "article",
+    "tags": ["error-correction", "fault-tolerance", "surface-codes", "qec"],
+    "excerpt": "QEC protects fragile quantum information by encoding across multiple physical qubits."
+  },
+  {
+    "title": "Building Your First Quantum Circuit with Qiskit",
+    "url": "/blog-post.html?id=first-quantum-circuit-qiskit",
+    "type": "article",
+    "tags": ["qiskit", "tutorial", "python", "circuits", "ibm"],
+    "excerpt": "Step-by-step tutorial for building and running your first quantum circuit using IBM Qiskit."
+  },
+  {
+    "title": "The Future of Quantum Computing in India",
+    "url": "/blog-post.html?id=future-quantum-computing-india",
+    "type": "article",
+    "tags": ["india", "nqm", "ecosystem", "careers", "startups"],
+    "excerpt": "India's National Quantum Mission and the growing ecosystem of IITs, startups, and opportunities."
+  },
+  {
+    "title": "Quantum Computing Fundamentals",
+    "url": "/course-single.html?id=quantum-fundamentals",
+    "type": "course",
+    "tags": ["beginner", "basics", "qubits", "fundamentals"],
+    "excerpt": "Introduction to qubits, superposition, and quantum mechanics basics. Perfect for beginners."
+  },
+  {
+    "title": "Quantum Gates and Circuits",
+    "url": "/course-single.html?id=quantum-gates",
+    "type": "course",
+    "tags": ["beginner", "gates", "circuits", "pauli", "hadamard"],
+    "excerpt": "Learn Pauli-X, Hadamard, CNOT gates and build simple quantum circuits."
+  },
+  {
+    "title": "Grover's Search Algorithm",
+    "url": "/course-single.html?id=grovers-algorithm",
+    "type": "course",
+    "tags": ["intermediate", "grover", "search", "algorithm"],
+    "excerpt": "Master quantum search algorithm with quadratic speedup and oracle construction."
+  },
+  {
+    "title": "Shor's Algorithm Deep Dive",
+    "url": "/course-single.html?id=shors-algorithm",
+    "type": "course",
+    "tags": ["intermediate", "shor", "factoring", "qft"],
+    "excerpt": "Understand how Shor's algorithm breaks RSA encryption using quantum Fourier transform."
+  },
+  {
+    "title": "Quantum Hardware Fundamentals",
+    "url": "/course-single.html?id=quantum-hardware",
+    "type": "course",
+    "tags": ["advanced", "hardware", "superconducting", "trapped-ion"],
+    "excerpt": "Explore superconducting qubits, trapped ions, decoherence, and error correction."
+  },
+  {
+    "title": "Quantum Machine Learning",
+    "url": "/course-single.html?id=quantum-ml",
+    "type": "course",
+    "tags": ["advanced", "qml", "machine-learning", "variational"],
+    "excerpt": "Quantum neural networks, VQE, quantum kernels, and bridging quantum with AI."
+  },
+  {
+    "title": "Qubit",
+    "url": "/glossary.html#qubit",
+    "type": "glossary",
+    "tags": ["qubit", "quantum-bit", "fundamental"],
+    "excerpt": "The fundamental unit of quantum information that can exist in superposition of |0⟩ and |1⟩."
+  },
+  {
+    "title": "Superposition",
+    "url": "/glossary.html#superposition",
+    "type": "glossary",
+    "tags": ["superposition", "quantum-state"],
+    "excerpt": "A quantum system existing in multiple states simultaneously until measured."
+  },
+  {
+    "title": "Entanglement",
+    "url": "/glossary.html#entanglement",
+    "type": "glossary",
+    "tags": ["entanglement", "correlation", "non-local"],
+    "excerpt": "Quantum correlation where measuring one qubit instantly affects another regardless of distance."
+  },
+  {
+    "title": "Hadamard Gate",
+    "url": "/glossary.html#hadamard",
+    "type": "glossary",
+    "tags": ["hadamard", "gate", "superposition"],
+    "excerpt": "Single-qubit gate creating equal superposition: H|0⟩ = (|0⟩+|1⟩)/√2."
+  },
+  {
+    "title": "CNOT Gate",
+    "url": "/glossary.html#cnot",
+    "type": "glossary",
+    "tags": ["cnot", "controlled-not", "two-qubit", "entanglement"],
+    "excerpt": "Two-qubit gate that flips target if control is |1⟩. Essential for entanglement."
+  },
+  {
+    "title": "Decoherence",
+    "url": "/glossary.html#decoherence",
+    "type": "glossary",
+    "tags": ["decoherence", "noise", "environment"],
+    "excerpt": "Loss of quantum coherence due to environmental interaction, causing qubits to decay."
+  },
+  {
+    "title": "NISQ",
+    "url": "/glossary.html#nisq",
+    "type": "glossary",
+    "tags": ["nisq", "noisy", "intermediate-scale"],
+    "excerpt": "Noisy Intermediate-Scale Quantum era: current 50-1000 qubit devices too noisy for full error correction."
+  },
+  {
+    "title": "Quantum Volume",
+    "url": "/glossary.html#quantum-volume",
+    "type": "glossary",
+    "tags": ["quantum-volume", "metric", "benchmark"],
+    "excerpt": "Single-number metric for quantum computer power accounting for qubits, connectivity, and fidelity."
+  },
+  {
+    "title": "VQE",
+    "url": "/glossary.html#vqe",
+    "type": "glossary",
+    "tags": ["vqe", "variational", "eigensolver", "chemistry"],
+    "excerpt": "Variational Quantum Eigensolver: hybrid algorithm for finding molecular ground state energies."
+  }
+]

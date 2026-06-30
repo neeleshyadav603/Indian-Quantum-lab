@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indian Quantum Lab Blog</title>
+    <link>https://indianquantumlab.in/blog.html</link>
+    <description>Deep dives into quantum computing concepts, algorithms, research breakthroughs, and practical tutorials from India's open quantum education platform.</description>
+    <language>en-in</language>
+    <lastBuildDate>Tue, 30 Jun 2026 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://indianquantumlab.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://indianquantumlab.in/assets/images/logo.png</url>
+      <title>Indian Quantum Lab</title>
+      <link>https://indianquantumlab.in</link>
+    </image>
+
+    <item>
+      <title>Introduction to Qubits: Beyond Classical Bits</title>
+      <link>https://indianquantumlab.in/blog-post.html?id=introduction-to-qubits</link>
+      <guid isPermaLink="true">https://indianquantumlab.in/blog-post.html?id=introduction-to-qubits</guid>
+      <pubDate>Sun, 15 Jun 2026 00:00:00 +0530</pubDate>
+      <description>Unlike classical bits that exist as 0 or 1, qubits can exist in superposition — a fundamental property that enables quantum parallelism and exponential speedup in specific computations.</description>
+      <category>Quantum Basics</category>
+      <category>Qubits</category>
+    </item>
+
+    <item>
+      <title>Understanding the Hadamard Gate</title>
+      <link>https://indianquantumlab.in/blog-post.html?id=understanding-hadamard-gate</link>
+      <guid isPermaLink="true">https://indianquantumlab.in/blog-post.html?id=understanding-hadamard-gate</guid>
+      <pubDate>Tue, 10 Jun 2026 00:00:00 +0530</pubDate>
+      <description>The Hadamard gate is the workhorse of quantum computing. Learn how this simple 2x2 matrix creates perfect superposition and enables quantum algorithms to explore multiple paths simultaneously.</description>
+      <category>Gates &amp; Circuits</category>
+      <category>Hadamard</category>
+    </item>
+
+    <item>
+      <title>Quantum Entanglement Explained Simply</title>
+      <link>https://indianquantumlab.in/blog-post.html?id=quantum-entanglement-explained</link>
+      <guid isPermaLink="true">https://indianquantumlab.in/blog-post.html?id=quantum-entanglement-explained</guid>
+      <pubDate>Thu, 05 Jun 2026 00:00:00 +0530</pubDate>
+      <description>Einstein called it "spooky action at a distance." Entanglement links qubits so that measuring one instantly determines the other, regardless of distance — enabling quantum teleportation and secure communication.</description>
+      <category>Quantum Basics</category>
+      <category>Entanglement</category>
+    </item>
+
+    <item>
+      <title>Grover's Search Algorithm: A Visual Guide</title>
+      <link>https://indianquantumlab.in/blog-post.html?id=grovers-algorithm-visual-guide</link>
+      <guid isPermaLink="true">https://indianquantumlab.in/blog-post.html?id=grovers-algorithm-visual-guide</guid>
+      <pubDate>Wed, 28 May 2026 00:00:00 +0530</pubDate>
+      <description>Grover's algorithm finds a marked item in an unsorted database of N items using only √N queries — a quadratic speedup over classical search. Learn how amplitude amplification makes this possible.</description>
+      <category>Algorithms</category>
+      <category>Grover</category>
+    </item>
+
+    <item>
+      <title>Shor's Algorithm and the Future of RSA Encryption</title>
+      <link>https://indianquantumlab.in/blog-post.html?id=shors-algorithm-rsa</link>
+      <guid isPermaLink="true">https://indianquantumlab.in/blog-post.html?id=shors-algorithm-rsa</guid>
+      <pubDate>Tue, 20 May 2026 00:00:00 +0530</pubDate>
+      <description>Shor's algorithm can factor large integers exponentially faster than classical methods, threatening RSA encryption. Learn the math behind it and why post-quantum cryptography is essential.</description>
+      <category>Algorithms</category>
+      <category>Cryptography</category>
+    </item>
+  </channel>
+</rss>

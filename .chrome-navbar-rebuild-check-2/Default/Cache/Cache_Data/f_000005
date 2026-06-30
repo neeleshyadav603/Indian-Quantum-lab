@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/seo.js"></script>
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/learn.css">
+    
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+        <a href="/" class="navbar-brand" aria-label="Indian Quantum Lab Home">
+            <span class="navbar-brand-icon" aria-hidden="true"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1.5"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/></svg></span>
+            <span class="navbar-brand-text">Indian Quantum Lab</span>
+        </a>
+
+        <ul class="navbar-links" aria-label="Primary navigation">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/courses.html" class="navbar-link">Courses</a></li>
+            <li><a href="/learn.html" class="navbar-link">Learn</a></li>
+            <li><a href="/blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="/research.html" class="navbar-link">Research</a></li>
+            <li><a href="/virtual-lab.html" class="navbar-link">Virtual Lab</a></li>
+            <li><a href="/community.html" class="navbar-link">Community</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+            <button class="navbar-action-btn theme-toggle" aria-label="Toggle dark mode" type="button">
+                <span class="theme-toggle-icon">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </span>
+            </button>
+            <button class="navbar-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-mobile" type="button"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+
+    <div class="navbar-mobile" id="navbar-mobile" aria-hidden="true">
+        <ul class="navbar-mobile-list" aria-label="Mobile navigation">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/courses.html" class="navbar-link">Courses</a></li>
+            <li><a href="/learn.html" class="navbar-link">Learn</a></li>
+            <li><a href="/blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="/research.html" class="navbar-link">Research</a></li>
+            <li><a href="/virtual-lab.html" class="navbar-link">Virtual Lab</a></li>
+            <li><a href="/community.html" class="navbar-link">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+        <main class="page-main">
+            
+            <!-- Hero Section -->
+            <section class="learn-hero">
+                <div class="container">
+                    <span class="section-eyebrow">Your Quantum Journey</span>
+                    <h1>Learning <span class="gradient-text">Pathways</span></h1>
+                    <p>Follow structured lessons from fundamentals to cutting-edge research. Track your progress, resume anytime, and master quantum computing at your own pace.</p>
+                    
+                    <div class="learn-stats">
+                        <div class="learn-stat">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">Total Lessons</div>
+                        </div>
+                        <div class="learn-stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Learning Tracks</div>
+                        </div>
+                        <div class="learn-stat">
+                            <div class="stat-number" id="totalCompleted">0</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Continue Where You Left Off -->
+            <section class="continue-section" id="continueSection" style="display: none;">
+                <div class="container">
+                    <div class="continue-card">
+                        <div class="continue-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4V8Z"/></svg></div>
+                        <div class="continue-info">
+                            <h3>Continue where you left off</h3>
+                            <p id="continueLesson">Pick up your next lesson</p>
+                        </div>
+                        <button class="btn btn-primary" id="continueBtn">
+                            Resume Learning
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tracks Section -->
+            <section class="tracks-section">
+                <div class="container">
+                    <div class="tracks-grid">
+                        
+                        <!-- Beginner Track -->
+                        <div class="track-card" data-track="beginner">
+                            <div class="track-header">
+                                <div class="track-icon track-icon-beginner"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12c-4.5 0-8-2.5-8-7 4.5 0 8 2.5 8 7Z"/><path d="M12 12c0-4.5 3.5-7 8-7 0 4.5-3.5 7-8 7Z"/></svg></div>
+                                <div class="track-info">
+                                    <span class="tag tag-beginner">Beginner</span>
+                                    <h2 class="track-title">Quantum Foundations</h2>
+                                    <p class="track-description">Start your quantum journey with the essential building blocks. No prior knowledge required.</p>
+                                    <div class="track-meta">
+                                        <span>10 lessons</span>
+                                        <span>·</span>
+                                        <span>~8 hours</span>
+                                    </div>
+                                </div>
+                                <div class="track-progress-mini">
+                                    <div class="progress-circle" data-progress="0">
+                                        <svg viewBox="0 0 36 36">
+                                            <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="progress-bar" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <span class="progress-text">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="track-toggle" aria-expanded="false">
+                                <span>View Lessons</span>
+                                <svg class="toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+
+                            <div class="track-content" style="display: none;">
+                                <div class="track-progress-bar">
+                                    <div class="progress-bar-large">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span class="progress-label">0 of 10 lessons complete</span>
+                                </div>
+                                <ol class="lesson-list" id="lessons-beginner"></ol>
+                            </div>
+                        </div>
+
+                        <!-- Intermediate Track -->
+                        <div class="track-card" data-track="intermediate">
+                            <div class="track-header">
+                                <div class="track-icon track-icon-intermediate"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 11-14h-8l1-6Z"/></svg></div>
+                                <div class="track-info">
+                                    <span class="tag tag-intermediate">Intermediate</span>
+                                    <h2 class="track-title">Quantum Algorithms</h2>
+                                    <p class="track-description">Master the algorithms that power quantum computing. Requires completion of beginner track.</p>
+                                    <div class="track-meta">
+                                        <span>8 lessons</span>
+                                        <span>·</span>
+                                        <span>~12 hours</span>
+                                    </div>
+                                </div>
+                                <div class="track-progress-mini">
+                                    <div class="progress-circle" data-progress="0">
+                                        <svg viewBox="0 0 36 36">
+                                            <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="progress-bar" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <span class="progress-text">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="track-toggle" aria-expanded="false">
+                                <span>View Lessons</span>
+                                <svg class="toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+
+                            <div class="track-content" style="display: none;">
+                                <div class="track-progress-bar">
+                                    <div class="progress-bar-large">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span class="progress-label">0 of 8 lessons complete</span>
+                                </div>
+                                <ol class="lesson-list" id="lessons-intermediate"></ol>
+                            </div>
+                        </div>
+
+                        <!-- Advanced Track -->
+                        <div class="track-card" data-track="advanced">
+                            <div class="track-header">
+                                <div class="track-icon track-icon-advanced"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6"/><path d="M10 3v6L4.5 19A2 2 0 0 0 6.2 22h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 16h10"/></svg></div>
+                                <div class="track-info">
+                                    <span class="tag tag-advanced">Advanced</span>
+                                    <h2 class="track-title">Research Frontiers</h2>
+                                    <p class="track-description">Explore cutting-edge topics in quantum research. For researchers and advanced practitioners.</p>
+                                    <div class="track-meta">
+                                        <span>6 lessons</span>
+                                        <span>·</span>
+                                        <span>~10 hours</span>
+                                    </div>
+                                </div>
+                                <div class="track-progress-mini">
+                                    <div class="progress-circle" data-progress="0">
+                                        <svg viewBox="0 0 36 36">
+                                            <path class="progress-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="progress-bar" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <span class="progress-text">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="track-toggle" aria-expanded="false">
+                                <span>View Lessons</span>
+                                <svg class="toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+
+                            <div class="track-content" style="display: none;">
+                                <div class="track-progress-bar">
+                                    <div class="progress-bar-large">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span class="progress-label">0 of 6 lessons complete</span>
+                                </div>
+                                <ol class="lesson-list" id="lessons-advanced"></ol>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="learn-cta">
+                <div class="container">
+                    <div class="cta-card">
+                        <h2>Ready to experiment?</h2>
+                        <p>Apply what you've learned in our interactive Virtual Quantum Lab — no installation required.</p>
+                        <a href="/virtual-lab.html" class="btn btn-primary btn-lg">
+                            Open Virtual Lab
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo"><span class="footer-logo-icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1.5"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/></svg></span><span>Indian Quantum Lab</span></a>
+                    <p class="footer-tagline">Democratizing quantum computing education for India's next generation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="/blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/learn.html" class="footer-link">Learning Pathways</a></li>
+                        <li><a href="/glossary.html" class="footer-link">Glossary</a></li>
+                        <li><a href="/virtual-lab.html" class="footer-link">Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Stay Updated</h3>
+                    <a href="https://indianquantumlab.substack.com" class="footer-newsletter-btn" target="_blank">Join Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Indian Quantum Lab. All rights reserved.</p>
+                <p class="footer-credit">Built with <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg> for Indian Quantum Community</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/learn-data.js"></script>
+    <script src="/js/learn.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public roadmap for Indian Quantum Lab — see what we're planning, building, and have shipped.">
+    <title>Roadmap — Indian Quantum Lab</title>
+    
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+        <a href="/" class="navbar-brand" aria-label="Indian Quantum Lab Home">
+            <img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon">
+            <span class="navbar-brand-text">Indian Quantum Lab</span>
+        </a>
+
+        <ul class="navbar-links" id="navbar-links" aria-label="Primary navigation">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/courses.html" class="navbar-link">Courses</a></li>
+            <li><a href="/learn.html" class="navbar-link">Learn</a></li>
+            <li><a href="/blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="/research.html" class="navbar-link">Research</a></li>
+            <li><a href="/virtual-lab.html" class="navbar-link">Virtual Lab</a></li>
+            <li><a href="/community.html" class="navbar-link">Community</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+            <button class="navbar-action-btn theme-toggle" aria-label="Toggle dark mode" type="button">
+                <span class="theme-toggle-icon">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </span>
+            </button>
+            <button class="navbar-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-links" type="button"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+        <main class="page-main">
+            
+            <section class="page-hero">
+                <div class="container">
+                    <span class="section-eyebrow">Building in Public</span>
+                    <h1>Product <span class="gradient-text">Roadmap</span></h1>
+                    <p>Our transparent roadmap for Indian Quantum Lab. See what we're planning, what we're building right now, and what's already shipped. Want a feature? <a href="https://github.com/indian-quantum-lab/roadmap/issues" target="_blank" rel="noopener" style="color: var(--color-accent);">Open a GitHub issue</a>.</p>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <div class="container">
+                    
+                    <div class="kanban-board">
+                        
+                        <!-- Planned -->
+                        <div class="kanban-column" data-status="planned">
+                            <div class="kanban-header">
+                                <div class="kanban-title">Planned</div>
+                                <div class="kanban-count">5</div>
+                            </div>
+                            <div class="kanban-cards">
+                                
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Content</span>
+                                    <h3 class="kanban-card-title">Hindi & Tamil Translations</h3>
+                                    <p class="kanban-card-description">Translate beginner curriculum to Hindi and Tamil to reach non-English learners across India.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Q3 2026</span>
+                                        <span>Priority: High</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Tool</span>
+                                    <h3 class="kanban-card-title">Mobile App (React Native)</h3>
+                                    <p class="kanban-card-description">Native mobile app for learning on the go. Offline video downloads, push notifications for new content.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Q4 2026</span>
+                                        <span>Priority: Medium</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Community</span>
+                                    <h3 class="kanban-card-title">College Ambassador Program</h3>
+                                    <p class="kanban-card-description">Recruit and train student ambassadors at 50+ engineering colleges to lead local quantum study groups.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Q3 2026</span>
+                                        <span>Priority: High</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Cloud Progress Sync</h3>
+                                    <p class="kanban-card-description">Optional account-based progress sync across devices. Privacy-first design with end-to-end encryption.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Q1 2027</span>
+                                        <span>Priority: Medium</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Content</span>
+                                    <h3 class="kanban-card-title">Quantum Machine Learning Course</h3>
+                                    <p class="kanban-card-description">Complete advanced course covering VQE, QAOA, quantum kernels, and hybrid classical-quantum ML.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Q4 2026</span>
+                                        <span>Priority: Medium</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- In Progress -->
+                        <div class="kanban-column" data-status="in-progress">
+                            <div class="kanban-header">
+                                <div class="kanban-title">In Progress</div>
+                                <div class="kanban-count">4</div>
+                            </div>
+                            <div class="kanban-cards">
+                                
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Tool</span>
+                                    <h3 class="kanban-card-title">Error Correction Visualizer</h3>
+                                    <p class="kanban-card-description">Interactive web tool for visualizing surface codes, stabilizer measurements, and error chains in real time.</p>
+                                    <div class="kanban-card-meta">
+                                        <span>⚡ 70% complete</span>
+                                        <span>ETA: July</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Discussion Forum (Giscus)</h3>
+                                    <p class="kanban-card-description">Embedding Giscus comments across blog posts and courses for community discussion using GitHub Discussions.</p>
+                                    <div class="kanban-card-meta">
+                                        <span>⚡ 45% complete</span>
+                                        <span>ETA: July</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Content</span>
+                                    <h3 class="kanban-card-title">Quantum Cryptography Series</h3>
+                                    <p class="kanban-card-description">8-part blog series covering QKD (BB84, E91), post-quantum algorithms, and quantum-secure communications.</p>
+                                    <div class="kanban-card-meta">
+                                        <span>⚡ 60% complete</span>
+                                        <span>ETA: August</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Dark Mode Improvements</h3>
+                                    <p class="kanban-card-description">Refining dark mode color palette, improving contrast ratios for accessibility (WCAG AA compliance).</p>
+                                    <div class="kanban-card-meta">
+                                        <span>⚡ 85% complete</span>
+                                        <span>ETA: July</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Done -->
+                        <div class="kanban-column kanban-done" data-status="done">
+                            <div class="kanban-header">
+                                <div class="kanban-title">Done</div>
+                                <div class="kanban-count">10</div>
+                            </div>
+                            <div class="kanban-cards">
+                                
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Tool</span>
+                                    <h3 class="kanban-card-title">Virtual Quantum Lab v2.0</h3>
+                                    <p class="kanban-card-description">Browser-based circuit simulator with 4 qubits, drag-drop gates, state vector display, PNG export.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> June 2026</span>
+                                        <span>500+ circuits built</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Content</span>
+                                    <h3 class="kanban-card-title">9-Post Blog Series</h3>
+                                    <p class="kanban-card-description">Foundational blog articles covering qubits through quantum hardware with code examples.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> June 2026</span>
+                                        <span>15k+ readers</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Learning Pathways System</h3>
+                                    <p class="kanban-card-description">Beginner/Intermediate/Advanced tracks with 24 lessons and progress tracking.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> June 2026</span>
+                                        <span>3 tracks live</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">44-Term Quantum Glossary</h3>
+                                    <p class="kanban-card-description">Searchable glossary with alphabet navigation, related term linking, and definitions.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> June 2026</span>
+                                        <span>A-Z coverage</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Quiz System</h3>
+                                    <p class="kanban-card-description">5 topic quizzes with Google Form integration and score tracking via localStorage.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> June 2026</span>
+                                        <span>5 quizzes live</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Certificate Generation</h3>
+                                    <p class="kanban-card-description">Auto-generated shareable certificates when learners complete courses.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> May 2026</span>
+                                        <span>LinkedIn share</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Courses Page Redesign</h3>
+                                    <p class="kanban-card-description">New course listing with filters, progress bars, and YouTube thumbnail integration.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> May 2026</span>
+                                        <span>6 courses listed</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Content</span>
+                                    <h3 class="kanban-card-title">Research Page</h3>
+                                    <p class="kanban-card-description">Publications list with BibTeX copy, open problems, and current research notes.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> April 2026</span>
+                                        <span>5 papers curated</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Community</span>
+                                    <h3 class="kanban-card-title">Discord Community</h3>
+                                    <p class="kanban-card-description">Launched and grew Discord server to 2,400+ members across India.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> June 2026</span>
+                                        <span>2.4k members</span>
+                                    </div>
+                                </div>
+
+                                <div class="kanban-card">
+                                    <span class="kanban-card-category">Platform</span>
+                                    <h3 class="kanban-card-title">Dark/Light Theme Toggle</h3>
+                                    <p class="kanban-card-description">Complete theme system with localStorage persistence and system preference detection.</p>
+                                    <div class="kanban-card-meta">
+                                        <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> March 2026</span>
+                                        <span>CSS variables</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: var(--space-10); padding: var(--space-6); background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); text-align: center;">
+                        <h3 style="margin-bottom: var(--space-3);">Have a feature request?</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: var(--space-5);">We prioritize based on community feedback. Upvote existing ideas or suggest new ones on GitHub.</p>
+                        <a href="https://github.com/indian-quantum-lab/roadmap/issues" class="btn btn-primary" target="_blank" rel="noopener">
+                            View & Vote on GitHub
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo"><img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon"><span>Indian Quantum Lab</span></a>
+                    <p class="footer-tagline">Democratizing quantum computing education for India's next generation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/roadmap.html" class="footer-link">Roadmap</a></li>
+                        <li><a href="/changelog.html" class="footer-link">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/learn.html" class="footer-link">Learn</a></li>
+                        <li><a href="/community.html" class="footer-link">Community</a></li>
+                        <li><a href="/virtual-lab.html" class="footer-link">Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Stay Updated</h3>
+                    <a href="https://indianquantumlab.substack.com" class="footer-newsletter-btn" target="_blank">Join Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Indian Quantum Lab. All rights reserved.</p>
+                <p class="footer-credit">Built with <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg> for Indian Quantum Community</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

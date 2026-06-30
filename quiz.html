@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/seo.js"></script>
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/quiz.css">
+    
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-container">
+        <a href="/" class="navbar-brand" aria-label="Indian Quantum Lab Home">
+            <img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon">
+            <span class="navbar-brand-text">Indian Quantum Lab</span>
+        </a>
+
+        <ul class="navbar-links" id="navbar-links" aria-label="Primary navigation">
+            <li><a href="/" class="navbar-link">Home</a></li>
+            <li><a href="/courses.html" class="navbar-link">Courses</a></li>
+            <li><a href="/learn.html" class="navbar-link">Learn</a></li>
+            <li><a href="/blog.html" class="navbar-link">Blog</a></li>
+            <li><a href="/research.html" class="navbar-link">Research</a></li>
+            <li><a href="/virtual-lab.html" class="navbar-link">Virtual Lab</a></li>
+            <li><a href="/community.html" class="navbar-link">Community</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+            <button class="navbar-action-btn theme-toggle" aria-label="Toggle dark mode" type="button">
+                <span class="theme-toggle-icon">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </span>
+            </button>
+            <button class="navbar-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-links" type="button"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+        <main class="page-main">
+            
+            <!-- Hero -->
+            <section class="quiz-hero">
+                <div class="container">
+                    <span class="section-eyebrow">Test Yourself</span>
+                    <h1>Test Your <span class="gradient-text">Quantum Knowledge</span></h1>
+                    <p>Challenge yourself with quizzes across different quantum computing topics. Track your scores and watch your expertise grow.</p>
+                </div>
+            </section>
+
+            <!-- Topic Cards -->
+            <section class="quiz-section">
+                <div class="container">
+                    <div class="quiz-grid" id="quizGrid">
+                        
+                        <!-- Quantum Basics -->
+                        <div class="quiz-card" data-quiz="basics" data-form="https://docs.google.com/forms/d/e/1FAIpQLScBasicsFormID/viewform?embedded=true">
+                            <div class="quiz-card-top">
+                                <div class="quiz-icon quiz-icon-basics"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1.5"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/></svg></div>
+                                <span class="tag tag-beginner">Beginner</span>
+                            </div>
+                            <h3 class="quiz-title">Quantum Basics</h3>
+                            <p class="quiz-description">Test your understanding of qubits, superposition, and fundamental quantum concepts.</p>
+                            <div class="quiz-meta">
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> 15 questions</span>
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 10 minutes</span>
+                            </div>
+                            <button class="btn btn-primary btn-block quiz-take-btn">
+                                Take Quiz
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="quiz-best-score" data-topic="basics" style="display: none;">
+                                <span class="score-label">Your best:</span>
+                                <span class="score-value"></span>
+                            </div>
+                        </div>
+
+                        <!-- Quantum Gates -->
+                        <div class="quiz-card" data-quiz="gates" data-form="https://docs.google.com/forms/d/e/1FAIpQLScGatesFormID/viewform?embedded=true">
+                            <div class="quiz-card-top">
+                                <div class="quiz-icon quiz-icon-gates"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 11-14h-8l1-6Z"/></svg></div>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="quiz-title">Quantum Gates</h3>
+                            <p class="quiz-description">Challenge yourself on Hadamard, Pauli gates, CNOT, and circuit manipulation.</p>
+                            <div class="quiz-meta">
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> 20 questions</span>
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 15 minutes</span>
+                            </div>
+                            <button class="btn btn-primary btn-block quiz-take-btn">
+                                Take Quiz
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="quiz-best-score" data-topic="gates" style="display: none;">
+                                <span class="score-label">Your best:</span>
+                                <span class="score-value"></span>
+                            </div>
+                        </div>
+
+                        <!-- Quantum Algorithms -->
+                        <div class="quiz-card" data-quiz="algorithms" data-form="https://docs.google.com/forms/d/e/1FAIpQLScAlgorithmsFormID/viewform?embedded=true">
+                            <div class="quiz-card-top">
+                                <div class="quiz-icon quiz-icon-algorithms"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="quiz-title">Quantum Algorithms</h3>
+                            <p class="quiz-description">Test your knowledge of Grover's, Shor's, QFT, and quantum algorithm design.</p>
+                            <div class="quiz-meta">
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> 25 questions</span>
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 20 minutes</span>
+                            </div>
+                            <button class="btn btn-primary btn-block quiz-take-btn">
+                                Take Quiz
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="quiz-best-score" data-topic="algorithms" style="display: none;">
+                                <span class="score-label">Your best:</span>
+                                <span class="score-value"></span>
+                            </div>
+                        </div>
+
+                        <!-- Quantum Hardware -->
+                        <div class="quiz-card" data-quiz="hardware" data-form="https://docs.google.com/forms/d/e/1FAIpQLScHardwareFormID/viewform?embedded=true">
+                            <div class="quiz-card-top">
+                                <div class="quiz-icon quiz-icon-hardware"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18v3h3l6.7-6.7a4 4 0 0 0 5-5l-2.9 2.9-2-2 2.9-2.9Z"/></svg></div>
+                                <span class="tag tag-intermediate">Intermediate</span>
+                            </div>
+                            <h3 class="quiz-title">Quantum Hardware</h3>
+                            <p class="quiz-description">Test your understanding of superconducting qubits, trapped ions, and NISQ devices.</p>
+                            <div class="quiz-meta">
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> 15 questions</span>
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 12 minutes</span>
+                            </div>
+                            <button class="btn btn-primary btn-block quiz-take-btn">
+                                Take Quiz
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="quiz-best-score" data-topic="hardware" style="display: none;">
+                                <span class="score-label">Your best:</span>
+                                <span class="score-value"></span>
+                            </div>
+                        </div>
+
+                        <!-- Quantum Cryptography -->
+                        <div class="quiz-card" data-quiz="cryptography" data-form="https://docs.google.com/forms/d/e/1FAIpQLScCryptoFormID/viewform?embedded=true">
+                            <div class="quiz-card-top">
+                                <div class="quiz-icon quiz-icon-cryptography"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+                                <span class="tag tag-advanced">Advanced</span>
+                            </div>
+                            <h3 class="quiz-title">Quantum Cryptography</h3>
+                            <p class="quiz-description">Challenge yourself on QKD, post-quantum algorithms, and quantum-safe security.</p>
+                            <div class="quiz-meta">
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> 18 questions</span>
+                                <span><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 15 minutes</span>
+                            </div>
+                            <button class="btn btn-primary btn-block quiz-take-btn">
+                                Take Quiz
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <div class="quiz-best-score" data-topic="cryptography" style="display: none;">
+                                <span class="score-label">Your best:</span>
+                                <span class="score-value"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Modal -->
+            <div class="quiz-modal" id="quizModal" style="display: none;">
+                <div class="quiz-modal-content">
+                    <div class="quiz-modal-header">
+                        <h2 id="quizModalTitle">Quiz</h2>
+                        <button class="quiz-modal-close" id="quizClose" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="quiz-modal-body">
+                        <div class="quiz-iframe-wrapper">
+                            <iframe id="quizIframe" src="" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">Loading...</iframe>
+                        </div>
+                        <div class="quiz-note">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="16" x2="12" y2="12"/>
+                                <line x1="12" y1="8" x2="12.01" y2="8"/>
+                            </svg>
+                            <span>Your results will be shown immediately after submission. After completing, save your score below.</span>
+                        </div>
+                        <div class="quiz-score-form" id="scoreForm">
+                            <h3>Save Your Score</h3>
+                            <div class="score-input-group">
+                                <input type="number" id="scoreInput" min="0" max="100" placeholder="Your score (0-100)">
+                                <span class="score-suffix">%</span>
+                                <button class="btn btn-primary" id="saveScoreBtn">Save Score</button>
+                            </div>
+                            <p class="score-hint">Enter your final score percentage to track your progress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Scores Section -->
+            <section class="scores-section">
+                <div class="container">
+                    <div class="scores-header">
+                        <div>
+                            <span class="section-eyebrow">Your Progress</span>
+                            <h2>Past Quiz Scores</h2>
+                        </div>
+                        <button class="btn btn-ghost btn-sm" id="clearScoresBtn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="3 6 5 6 21 6"/>
+                                <path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/>
+                            </svg>
+                            Clear All Scores
+                        </button>
+                    </div>
+
+                    <div class="scores-grid" id="scoresGrid">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <div class="scores-empty" id="scoresEmpty">
+                        <div class="empty-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+                        <h3>No scores recorded yet</h3>
+                        <p>Take a quiz above to start tracking your quantum knowledge.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="/" class="footer-logo"><img src="/assets/icons/logo.png" alt="Indian Quantum Lab logo" class="logo-icon"><span>Indian Quantum Lab</span></a>
+                    <p class="footer-tagline">Democratizing quantum computing education for India's next generation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="/blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/learn.html" class="footer-link">Learning Pathways</a></li>
+                        <li><a href="/glossary.html" class="footer-link">Glossary</a></li>
+                        <li><a href="/virtual-lab.html" class="footer-link">Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Stay Updated</h3>
+                    <a href="https://indianquantumlab.substack.com" class="footer-newsletter-btn" target="_blank">Join Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Indian Quantum Lab. All rights reserved.</p>
+                <p class="footer-credit">Built with <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg> for Indian Quantum Community</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/theme-toggle.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/quiz.js"></script>
+</body>
+</html>

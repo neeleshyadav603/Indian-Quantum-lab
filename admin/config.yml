@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: indian-quantum-lab/website
+  branch: main
+  site_domain: indianquantumlab.in
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+publish_mode: editorial_workflow
+
+collections:
+  # Blog Posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly identifier (e.g., introduction-to-qubits)" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["basics", "gates", "algorithms", "hardware", "research", "news"] }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+      - { label: "Author Name", name: "author_name", widget: "string" }
+      - { label: "Author Initials", name: "author_initials", widget: "string", default: "AK" }
+      - { label: "Read Time (min)", name: "read_time", widget: "number", default: 10 }
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "Short description for card display" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "BibTeX Citation", name: "bibtex", widget: "text", required: false }
+
+  # Courses
+  - name: "courses"
+    label: "Courses"
+    folder: "content/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "YouTube Video ID", name: "youtube_id", widget: "string", hint: "e.g., OWJCfOvchA4" }
+      - { label: "Instructor", name: "instructor", widget: "string" }
+      - { label: "Level", name: "level", widget: "select", options: ["beginner", "intermediate", "advanced"] }
+      - { label: "Topic", name: "topic", widget: "select", options: ["basics", "gates", "algorithms", "hardware"] }
+      - { label: "Total Lectures", name: "total_lectures", widget: "number" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Notes PDF URL", name: "notes_url", widget: "string", required: false }
+
+  # Learning Pathway Lessons
+  - name: "lessons"
+    label: "Learn Lessons"
+    folder: "content/lessons"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Lesson ID", name: "id", widget: "string", hint: "Unique ID (e.g., b1-qubits)" }
+      - { label: "Track", name: "track", widget: "select", options: ["beginner", "intermediate", "advanced"] }
+      - { label: "Order", name: "order", widget: "number", hint: "Position within track (1, 2, 3...)" }
+      - { label: "Type", name: "type", widget: "select", options: ["article", "video", "quiz"] }
+      - { label: "Estimated Time", name: "time", widget: "string", hint: "e.g., 45 min" }
+      - { label: "Link URL", name: "url", widget: "string", hint: "Relative path to content" }
+      - { label: "Description", name: "description", widget: "string" }

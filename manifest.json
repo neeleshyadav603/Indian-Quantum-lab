@@ -1,0 +1,41 @@
+{
+  "name": "Indian Quantum Lab",
+  "short_name": "IQL",
+  "description": "India's open educational platform for quantum computing — free courses, virtual labs, and research resources.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0a0a2e",
+  "background_color": "#0a0a2e",
+  "categories": ["education", "science", "developer tools"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Virtual Lab",
+      "short_name": "Lab",
+      "url": "/virtual-lab.html",
+      "icons": [{ "src": "/assets/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Courses",
+      "short_name": "Learn",
+      "url": "/courses.html",
+      "icons": [{ "src": "/assets/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
