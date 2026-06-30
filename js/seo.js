@@ -9,27 +9,27 @@
     // Sirf yahan data add/edit karein - baaki sab automatic hai
     const SITE = {
         name: 'Indian Quantum Lab',
-        domain: 'https://indianquantumlab.in',
-        defaultImage: '/assets/images/og-default.jpg',
+        domain: 'https://virtualquantumlab.app',
+        defaultImage: '/assets/images/default.jpg',
         twitterHandle: '@indianquantumlab',
         gaId: 'G-XXXXXXXXXX' // ← Apna GA4 ID yahan daalein
     };
 
     const PAGES = {
         'index.html': {
-            title: 'Home',
+            title: 'Learn Quantum Computing',
             desc: "India's open educational platform for quantum computing — free courses, virtual labs, and research resources for every student."
         },
         'about.html': {
-            title: 'About',
+            title: 'About Indian Quantum Lab',
             desc: 'Our mission to make quantum computing education accessible to every Indian student. Meet the team and our journey.'
         },
         'courses.html': {
-            title: 'Courses',
+            title: 'Quantum Course',
             desc: 'Structured video courses from beginner to advanced quantum computing with progress tracking and certificates.'
         },
         'course-single.html': {
-            title: 'Course',
+            title: 'Quantum Course',
             desc: 'Watch quantum computing lectures, track your progress, and earn completion certificates.'
         },
         'learn.html': {
@@ -37,15 +37,15 @@
             desc: 'Follow structured lessons from fundamentals to cutting-edge research. Track progress across beginner, intermediate, and advanced tracks.'
         },
         'blog.html': {
-            title: 'Blog',
+            title: 'Quantum Blog',
             desc: 'Deep dives into quantum computing concepts, algorithms, research breakthroughs, and practical tutorials.'
         },
         'blog-post.html': {
-            title: 'Article',
+            title: 'Quantum Article',
             desc: 'Read in-depth articles on quantum computing topics with code examples and visual explanations.'
         },
         'research.html': {
-            title: 'Research',
+            title: 'Quantum Research',
             desc: 'Curated publications, open problems, and current research explorations pushing the boundaries of quantum computing.'
         },
         'virtual-lab.html': {
@@ -53,11 +53,11 @@
             desc: 'Build and simulate quantum circuits in your browser with drag-and-drop gates and real-time state vector visualization.'
         },
         'quiz.html': {
-            title: 'Quiz',
+            title: 'Quantum Quiz',
             desc: 'Test your quantum knowledge with interactive quizzes on basics, gates, algorithms, hardware, and cryptography.'
         },
         'glossary.html': {
-            title: 'Glossary',
+            title: 'Quantum Glossary',
             desc: 'Comprehensive quantum computing glossary with 44+ terms defined, linked, and searchable alphabetically.'
         },
         'community.html': {
@@ -65,7 +65,7 @@
             desc: "Join India's growing quantum computing community on Discord, Telegram, and GitHub. Learn and build together."
         },
         'resources.html': {
-            title: 'Resources',
+            title: 'Learning Resources',
             desc: 'Hand-picked books, courses, papers, YouTube channels, and tools to deepen your quantum knowledge.'
         },
         'downloads.html': {
@@ -73,11 +73,11 @@
             desc: 'Free software tools, course notes, research datasets, and educational resources for quantum computing.'
         },
         'contact.html': {
-            title: 'Contact',
+            title: 'Contact us',
             desc: 'Get in touch with questions, collaborations, speaking invitations, or feedback. We respond within 48 hours.'
         },
         'faq.html': {
-            title: 'FAQ',
+            title: 'Frequently Asked Questions',
             desc: 'Frequently asked questions about Indian Quantum Lab, courses, certificates, and technical requirements.'
         },
         'roadmap.html': {
@@ -134,7 +134,14 @@
         setMeta('name', 'twitter:description', pageData.desc);
         setMeta('name', 'twitter:image', imageUrl);
         setMeta('name', 'twitter:site', SITE.twitterHandle);
+        // Additional SEO Meta Tags
+        setMeta('name', 'author', 'Neelesh Kumar');
+        setMeta('name', 'robots', 'index, follow');
+        setMeta('name', 'keywords', 'Quantum Computing, Quantum Machine Learning, Qiskit, Quantum AI, Quantum Education, Indian Quantum Lab, Quantum Research');
+        setMeta('name', 'theme-color', '#0b1020');
 
+        setMeta('property', 'og:image:alt', 'Indian Quantum Lab');
+        setMeta('property', 'og:image:type', 'image/jpeg');
         // Google Analytics inject karein
         if (SITE.gaId && SITE.gaId !== 'G-XXXXXXXXXX') {
             injectAnalytics(SITE.gaId);
@@ -188,7 +195,37 @@
         gtag('js', new Date());
         gtag('config', gaId);
     }
-
+    injectStructuredData({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Indian Quantum Lab",
+    "url": "https://virtualquantumlab.app",
+    "logo": "https://virtualquantumlab.app/assets/icons/logo.png",
+    "description": "Indian Quantum Lab is an open platform for Quantum Computing education, research, tutorials, and open-source learning.",
+    "sameAs": [
+        "https://github.com/neeleshyadav603",
+        "https://www.linkedin.com/company/indian-quantum-lab/",
+        "https://www.youtube.com/@IndianQuantumLab",
+        "https://www.instagram.com/indian_quantum_lab/"
+    ]
+    });
+    injectStructuredData({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Indian Quantum Lab",
+    "url": "https://virtualquantumlab.app",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://virtualquantumlab.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+    });
+    function injectStructuredData(data) {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(data);
+    document.head.appendChild(script);
+    }
     // Run immediately
     init();
 

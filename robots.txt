@@ -1,5 +1,5 @@
 # Indian Quantum Lab - Robots.txt
-# https://indianquantumlab.in/robots.txt
+# https://virtualquantumlab.app/robots.txt
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Disallow: /partials/
 Disallow: /*.json$
 
 # Sitemap location
-Sitemap: https://indianquantumlab.in/sitemap.xml
+Sitemap: https://virtualquantumlab.app/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
