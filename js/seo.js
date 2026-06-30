@@ -12,7 +12,7 @@
         domain: 'https://virtualquantumlab.app',
         defaultImage: '/assets/images/default.jpg',
         twitterHandle: '@indianquantumlab',
-        gaId: 'G-XXXXXXXXXX' // ← Apna GA4 ID yahan daalein
+        gaId: 'G-L2WKW8BRM7' // ← Apna GA4 ID yahan daalein
     };
 
     const PAGES = {
@@ -143,7 +143,7 @@
         setMeta('property', 'og:image:alt', 'Indian Quantum Lab');
         setMeta('property', 'og:image:type', 'image/jpeg');
         // Google Analytics inject karein
-        if (SITE.gaId && SITE.gaId !== 'G-XXXXXXXXXX') {
+        if (SITE.gaId && SITE.gaId !== 'G-L2WKW8BRM7') {
             injectAnalytics(SITE.gaId);
         }
 
